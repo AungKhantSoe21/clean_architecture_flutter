@@ -1,4 +1,4 @@
-import 'package:country_list/features/countries/data/data_sources/local/country_local_data_resources.dart';
+import '/features/countries/data/data_sources/local/country_local_data_resources.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 

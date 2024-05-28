@@ -1,5 +1,5 @@
-import 'package:country_list/core/constants/db_constants.dart';
-import 'package:country_list/features/countries/domain/entities/country_entity.dart';
+import '/core/constants/db_constants.dart';
+import '/features/countries/domain/entities/country_entity.dart';
 
 class CountryModel extends CountryEntity {
   const CountryModel({

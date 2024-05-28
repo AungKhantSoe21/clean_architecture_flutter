@@ -1,6 +1,6 @@
-import 'package:country_list/core/constants/db_constants.dart';
-import 'package:country_list/core/services/db.dart';
-import 'package:country_list/features/countries/data/models/country_model.dart';
+import '/core/constants/db_constants.dart';
+import '/core/services/db.dart';
+import '/features/countries/data/models/country_model.dart';
 import 'package:sqflite/sqflite.dart';
 
 class CountryDataResourcesLocal {

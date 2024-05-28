@@ -1,8 +1,8 @@
-import 'package:country_list/features/countries/data/data_sources/local/country_local_data_resources.dart';
-import 'package:country_list/features/countries/data/data_sources/remote/country_remote_data_source.dart';
-import 'package:country_list/features/countries/data/repositories/country_repository_impl.dart';
-import 'package:country_list/features/countries/domain/repositories/country_repository.dart';
-import 'package:country_list/features/countries/domain/usecases/get_country_usecase.dart';
+import '/features/countries/data/data_sources/local/country_local_data_resources.dart';
+import '/features/countries/data/data_sources/remote/country_remote_data_source.dart';
+import '/features/countries/data/repositories/country_repository_impl.dart';
+import '/features/countries/domain/repositories/country_repository.dart';
+import '/features/countries/domain/usecases/get_country_usecase.dart';
 import 'package:get_it/get_it.dart';
 
 

@@ -1,7 +1,7 @@
-import 'package:country_list/core/services/data_state.dart';
-import 'package:country_list/core/services/usecase.dart';
-import 'package:country_list/features/countries/domain/entities/country_entity.dart';
-import 'package:country_list/features/countries/domain/repositories/country_repository.dart';
+import '/core/services/data_state.dart';
+import '/core/services/usecase.dart';
+import '/features/countries/domain/entities/country_entity.dart';
+import '/features/countries/domain/repositories/country_repository.dart';
 
 class GetCountryUsecase implements UseCase<DataState<List<CountryEntity>>, void>{
   

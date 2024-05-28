@@ -2,11 +2,11 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:country_list/core/services/data_state.dart';
-import 'package:country_list/features/countries/data/data_sources/local/country_local_data_resources.dart';
-import 'package:country_list/features/countries/data/data_sources/remote/country_remote_data_source.dart';
-import 'package:country_list/features/countries/data/models/country_model.dart';
-import 'package:country_list/features/countries/domain/repositories/country_repository.dart';
+import '/core/services/data_state.dart';
+import '/features/countries/data/data_sources/local/country_local_data_resources.dart';
+import '/features/countries/data/data_sources/remote/country_remote_data_source.dart';
+import '/features/countries/data/models/country_model.dart';
+import '/features/countries/domain/repositories/country_repository.dart';
 
 class CountryRepositoryImpl implements CountryRepository {
   final CountryDataSourceRemote _countryApiService;

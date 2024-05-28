@@ -1,8 +1,8 @@
 import 'dart:developer';
 
-import 'package:country_list/core/constants/font_constants.dart';
-import 'package:country_list/core/services/data_state.dart';
-import 'package:country_list/features/countries/presentation/states/country_state.dart';
+import '/core/constants/font_constants.dart';
+import '/core/services/data_state.dart';
+import '/features/countries/presentation/states/country_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
