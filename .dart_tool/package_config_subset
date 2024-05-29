@@ -38,6 +38,10 @@ get_it
 3.0
 file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/get_it-7.7.0/
 file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/get_it-7.7.0/lib/
+go_router
+3.2
+file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-14.1.4/
+file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-14.1.4/lib/
 http
 3.3
 file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.2.1/
@@ -62,6 +66,10 @@ lints
 3.0
 file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/lints-3.0.0/
 file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/lints-3.0.0/lib/
+logging
+2.19
+file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.2.0/
+file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.2.0/lib/
 matcher
 3.0
 file:///C:/Users/acer/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.16+1/
@@ -150,6 +158,10 @@ flutter_test
 3.3
 file:///C:/flutter/packages/flutter_test/
 file:///C:/flutter/packages/flutter_test/lib/
+flutter_web_plugins
+3.2
+file:///C:/flutter/packages/flutter_web_plugins/
+file:///C:/flutter/packages/flutter_web_plugins/lib/
 clean_architecture_flutter
 3.3
 file:///D:/WORK/Mobile/clean_architecture_flutter/

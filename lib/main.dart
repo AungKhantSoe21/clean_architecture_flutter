@@ -1,11 +1,11 @@
-import '/config/themes/app_themes.dart';
-import '/core/constants/text_constants.dart';
-import '/core/services/db.dart';
-import '/core/services/dependecies_container.dart';
-import '/features/countries/presentation/pages/country_selection.dart';
 import 'package:flutter/material.dart';
-
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'config/routes/routes.dart';
+import 'config/themes/app_themes.dart';
+import 'core/constants/text_constants.dart';
+import 'core/services/db.dart';
+import 'core/services/dependecies_container.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,13 +19,13 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: TextConstants.appTitle,
       theme: lightTheme(),
       themeMode: ThemeMode.light,
       darkTheme: dartTheme(),
-      home: const CountrySelection(),
       debugShowCheckedModeBanner: false,
+      routerConfig: routes,
     );
   }
 }
