@@ -1,4 +1,4 @@
-import '/config/themes/common/app_bar_theme.dart';
+import 'common/app_bar_theme.dart';
 import 'package:flutter/material.dart';
 
 ThemeData lightTheme() {

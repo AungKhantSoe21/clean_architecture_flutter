@@ -1,4 +1,4 @@
-import '/core/services/data_state.dart';
+import '../../../../core/utils/data_state/data_state.dart';
 import '/features/countries/domain/entities/country_entity.dart';
 
 abstract class CountryRepository {

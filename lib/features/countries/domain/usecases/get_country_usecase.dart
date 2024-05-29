@@ -1,5 +1,5 @@
-import '/core/services/data_state.dart';
-import '/core/services/usecase.dart';
+import '../../../../core/utils/data_state/data_state.dart';
+import '../../../../core/utils/usecases/usecase.dart';
 import '/features/countries/domain/entities/country_entity.dart';
 import '/features/countries/domain/repositories/country_repository.dart';
 

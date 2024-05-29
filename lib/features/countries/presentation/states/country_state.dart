@@ -1,4 +1,4 @@
-import '/core/services/data_state.dart';
+import '../../../../core/utils/data_state/data_state.dart';
 import '/features/countries/domain/entities/country_entity.dart';
 import '/features/countries/domain/usecases/get_country_usecase.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

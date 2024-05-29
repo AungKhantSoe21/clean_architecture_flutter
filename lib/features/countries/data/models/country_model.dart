@@ -1,4 +1,4 @@
-import '/core/constants/db_constants.dart';
+import '../../../../core/utils/constants/db_constants.dart';
 import '/features/countries/domain/entities/country_entity.dart';
 
 class CountryModel extends CountryEntity {

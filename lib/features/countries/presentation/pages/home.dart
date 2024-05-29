@@ -1,7 +1,7 @@
 import 'dart:developer';
 
-import '/core/constants/font_constants.dart';
-import '/core/services/data_state.dart';
+import '../../../../core/utils/constants/font_constants.dart';
+import '../../../../core/utils/data_state/data_state.dart';
 import '/features/countries/presentation/states/country_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
