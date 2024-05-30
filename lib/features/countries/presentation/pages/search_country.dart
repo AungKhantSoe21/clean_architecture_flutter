@@ -7,7 +7,24 @@ class SearchCountry extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      body: Container(),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              const TextField(),
+              IconButton(
+                onPressed: () {
+                  
+                },
+                icon: const Icon(Icons.search),
+              )
+            ],
+          ),
+          Expanded(
+            child: ListView(),
+          )
+        ],
+      ),
     );
   }
 }

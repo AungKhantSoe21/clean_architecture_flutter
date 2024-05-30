@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       darkTheme: dartTheme(),
       debugShowCheckedModeBanner: false,
-      routerConfig: routes,
+      routerConfig: AppRoutes.routes,
     );
   }
 }

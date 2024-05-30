@@ -41,5 +41,4 @@ class CountryRepositoryImpl implements CountryRepository {
       return DataFailed(e);
     }
   }
-  
 }
