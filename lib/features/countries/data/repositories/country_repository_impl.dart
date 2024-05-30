@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
+import 'package:clean_architecture_flutter/features/countries/domain/entities/country_entity.dart';
+
 import '../../../../core/utils/data_state/data_state.dart';
 import '/features/countries/data/data_sources/local/country_local_data_resources.dart';
 import '/features/countries/data/data_sources/remote/country_remote_data_source.dart';
@@ -18,27 +20,37 @@ class CountryRepositoryImpl implements CountryRepository {
     try {
       final response = await _countryApiService.getCountries();
       var data = json.decode(response.body);
-      
+
       if (response.statusCode == HttpStatus.ok) {
         List<CountryModel> responseData = data.map<CountryModel>((e) => CountryModel.fromAPIJson(e)).toList();
-        
+
         responseData = responseData..sort((a, b) => a.country!.compareTo(b.country!));
-        
+
         for (var item in responseData) {
           _countryLocalService.createItem(item);
         }
 
         return DataSuccess(responseData);
       } else {
-        return DataFailed(
-          HttpException(
-            response as String,
-          )
-        );
+        return DataFailed(HttpException(
+          response as String,
+        ));
       }
     } on Exception catch (e) {
       log(e.toString());
       return DataFailed(e);
     }
+  }
+
+  @override
+  List<CountryModel> searchCountries({required List<CountryEntity> data, required String key}) {
+    List<CountryModel> searchedData = [];
+    searchedData = data
+        .where((e) => e.country!.toLowerCase().contains(key))
+        .map<CountryModel>(
+          (e) => CountryModel.fromEntity(e),
+        )
+        .toList();
+    return searchedData;
   }
 }

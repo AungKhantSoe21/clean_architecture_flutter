@@ -2,7 +2,7 @@ import '/features/countries/data/data_sources/local/country_local_data_resources
 import '/features/countries/data/data_sources/remote/country_remote_data_source.dart';
 import '/features/countries/data/repositories/country_repository_impl.dart';
 import '/features/countries/domain/repositories/country_repository.dart';
-import '/features/countries/domain/usecases/get_country_usecase.dart';
+import '../../features/countries/domain/usecases/country_usecase.dart';
 import 'package:get_it/get_it.dart';
 
 Future<void> initializeDependencies() async {
@@ -17,7 +17,7 @@ Future<void> initializeDependencies() async {
   );
   
   //UseCases
-  sl.registerSingleton<GetCountryUsecase>(
-    GetCountryUsecase(sl())
+  sl.registerSingleton<CountryUsecases>(
+    CountryUsecases(sl())
   );
 }

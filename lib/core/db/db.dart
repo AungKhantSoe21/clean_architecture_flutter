@@ -3,7 +3,7 @@ import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
 class DBService {
-  static const String databaseName = "MegaMusic.db";
+  static const String databaseName = "test.db";
   static Database? db;
 
   static Future<Database> initizateDb() async{

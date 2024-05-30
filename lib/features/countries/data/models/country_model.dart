@@ -27,6 +27,15 @@ class CountryModel extends CountryEntity {
     );
   }
 
+  factory CountryModel.fromEntity(CountryEntity entity) {
+    return CountryModel(
+      id: entity.id,
+      country: entity.country,
+      countryCode: entity.countryCode,
+      image: entity.image,
+    );
+  }
+
   Map<String, Object> toJson() {
     return {
       DBConstants.countryTblColumn[0]: id ?? "",
