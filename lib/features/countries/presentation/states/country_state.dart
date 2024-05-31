@@ -39,6 +39,9 @@ class SearchDataState extends Notifier<List<CountryEntity>> {
   List<CountryEntity> build() => [];
 
   void search({required String key}) async {
+    // give user loading state whe start searching
+    ref.read(CountryState.searchState.notifier).changeState(true);
+
     // get current fetched country data
     final data = ref.watch(CountryState.countryData);
     List<CountryEntity> currentFetchedData = [];
@@ -46,8 +49,8 @@ class SearchDataState extends Notifier<List<CountryEntity>> {
       currentFetchedData = d.data!;
     });
 
-    // give user loading state whe start searching
-    ref.read(CountryState.searchState.notifier).changeState(true);
+    // make delay (for test loading state) 
+    await Future.delayed(const Duration(seconds: 3));
 
     // search countries base on key
     state = GetIt.instance.get<CountryUsecases>().searchCountry(data: currentFetchedData, key: key);

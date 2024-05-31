@@ -8,23 +8,23 @@ import '../../features/countries/presentation/pages/search_country.dart';
 
 class AppRoutes {
   static final routes = GoRouter(
-  initialLocation: AppRouteConstants.initialRoutePath,
-  routes: [
-    GoRoute(
-      name: AppRouteConstants.initialRouteName, // Optional, add name to your routes. Allows you navigate by name instead of path
-      path: AppRouteConstants.initialRoutePath,
-      builder: (context, state) => const Home(),
-    ),
-    GoRoute(
-      name: 'searchCountry',
-      path: '/searchCountry',
-      builder: (context, state) => const SearchCountry(),
-    ),
-    GoRoute(
-      name: 'countryDetail',
-      path: '/countryDetail',
-      builder: (context, state) => const CountryDetail(),
-    ),
-  ],
-);
+    initialLocation: AppRouteConstants.initialRoutePath,
+    routes: [
+      GoRoute(
+        name: AppRouteConstants.initialRouteName, // Optional, add name to your routes. Allows you navigate by name instead of path
+        path: AppRouteConstants.initialRoutePath,
+        builder: (context, state) => const Home(),
+      ),
+      GoRoute(
+        name: 'searchCountry',
+        path: '/searchCountry',
+        builder: (context, state) => const SearchCountry(),
+      ),
+      GoRoute(
+        name: 'countryDetail',
+        path: '/countryDetail',
+        builder: (context, state) => const CountryDetail(),
+      ),
+    ],
+  );
 }

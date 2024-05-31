@@ -254,10 +254,10 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-30T18:39:58.714603Z",
+  "generated": "2024-05-31T06:11:42.686536Z",
   "generator": "pub",
-  "generatorVersion": "3.4.0",
+  "generatorVersion": "3.4.1",
   "flutterRoot": "file:///C:/flutter",
-  "flutterVersion": "3.22.0",
+  "flutterVersion": "3.22.1",
   "pubCache": "file:///C:/Users/acer/AppData/Local/Pub/Cache"
 }

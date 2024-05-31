@@ -1,3 +1,4 @@
+// ignore_for_file: unused_field
 import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
@@ -26,9 +27,9 @@ class CountryRepositoryImpl implements CountryRepository {
 
         responseData = responseData..sort((a, b) => a.country!.compareTo(b.country!));
 
-        for (var item in responseData) {
-          _countryLocalService.createItem(item);
-        }
+        // for (var item in responseData) {
+        //   _countryLocalService.createItem(item);
+        // }
 
         return DataSuccess(responseData);
       } else {
