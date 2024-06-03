@@ -45,18 +45,8 @@ class Home extends ConsumerWidget {
                       ),
                     );
                   })
-              : Center(
-                  child: Column(
-                    children: [
-                      const Text("DATA FETCHED FAILED"),
-                      TextButton(
-                        onPressed: () {
-                          state = ref.watch(CountryState.countryData);
-                        },
-                        child: const Text("Retry"),
-                      )
-                    ],
-                  ),
+              : const Center(
+                  child: Text("DATA FETCHED FAILED"),
                 );
         },
         error: (o, errTrace) {

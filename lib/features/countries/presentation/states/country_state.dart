@@ -50,7 +50,7 @@ class SearchDataState extends Notifier<List<CountryEntity>> {
     });
 
     // make delay (for test loading state) 
-    await Future.delayed(const Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 1));
 
     // search countries base on key
     state = GetIt.instance.get<CountryUsecases>().searchCountry(data: currentFetchedData, key: key);
